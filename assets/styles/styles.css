@@ -1,0 +1,122 @@
+/*Universal colors*/
+:root{
+    --btnBackground: #46004d;
+    --btnBackgroundHover: #fa36a8;
+    --mainBackground: #ffffff;
+    --mainTextColor: #ffffff;
+    --secondaryBackground: #4f545c;
+}
+
+#display-highscore-div > button,
+#highscore-input-div > button,
+header button {
+    text-decoration: none;
+    background: var(--btnBackground);
+    color: var(--mainTextColor);
+    border: 0;
+    border-radius: 7px;
+    padding: 3px 10px 3px 10px;
+}
+
+header p {
+    padding: 3px 10px 3px 10px;
+    text-align: right;
+}
+
+body {
+    position: relative;
+    margin: 0.5rem;
+    min-height: 98vh;
+    background: var(--mainBackground);
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 15vw 5vh 15vh;
+}
+
+main h1 {
+    margin: 3vh;
+    font-size: 200%;
+    text-align: center;
+}
+
+main p {
+    font-size: 150%;
+    text-align: center;
+}
+
+main > button {
+    margin: 3vh;
+    width:max-content;
+    padding: 0 10px 0 10px;
+    background: var(--btnBackground);
+    color: var(--mainTextColor);
+    border: 0;
+    border-radius: 7px;
+    font-size: 150%;
+}
+
+main > ul {
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+main > ul li {
+    margin: 3vh;
+    width: max-content;
+    min-width: 10vw;
+    padding: 5px 10px 5px 10px;
+    background: var(--btnBackground);
+    color: var(--mainTextColor);
+    border: 0;
+    border-radius: 7px; 
+    font-size: 150%;
+}
+
+main > div {
+    justify-content: flex-start;
+    display: none;
+}
+
+main > div > * {
+    margin: 1rem;
+}
+
+#submit-highscore-div button:hover,
+#display-highscore-div button:hover,
+body button:hover, 
+main > ul li:hover {
+    background: var(--btnBackgroundHover);
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+#highscore-input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#highscore-input-div > *{
+    margin: 0.5rem;
+}
+
+#highscore-input-div > p {
+    display: inline;
+}
+
+#highscore-input-div > input {
+    width:30%;
+}
